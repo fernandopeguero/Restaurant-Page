@@ -4,7 +4,7 @@
   "description": "Restaurant page using webpack and node",
   "main": "index.js",
   "scripts": {
-    "run": "npx webpack serve",
+    "start": "npx webpack serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
