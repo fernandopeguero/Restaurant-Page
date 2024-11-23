@@ -1,3 +1,4 @@
+import './style.css'
 import { createNavigationMenu } from "./navigation.js";
 
 
