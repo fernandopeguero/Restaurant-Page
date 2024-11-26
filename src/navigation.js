@@ -1,4 +1,5 @@
 
+import { createButton } from "./util";
 
 export function createNavigationMenu() {
 
@@ -7,14 +8,14 @@ export function createNavigationMenu() {
 
     const menuItems = [
     // navigation buttons for the site
-        createNavigationButton('HOME','home'),
-        createNavigationButton('ABOUT US', 'aboutUs'),
-        createNavigationButton('MENU', 'menu'),
-        createNavigationButton('RESERVATIONS', 'reservations'),
-        createNavigationButton('ORDER ONLINE', 'orderOnline'),
-        createNavigationButton('GALLERY', 'gallery'),
-        createNavigationButton('EVENTS', 'events'),
-        createNavigationButton('CONTACT US', 'contactUs')
+        createButton('HOME','home'),
+        createButton('ABOUT US', 'aboutUs'),
+        createButton('MENU', 'menu'),
+        createButton('RESERVATIONS', 'reservations'),
+        createButton('ORDER ONLINE', 'orderOnline'),
+        createButton('GALLERY', 'gallery'),
+        createButton('EVENTS', 'events'),
+        createButton('CONTACT US', 'contactUs')
     ]
 
 
@@ -33,16 +34,7 @@ creates a navigation button with the desire class
 cls stands for class since class is a javascript keyword
 */
 
-function createNavigationButton(text, cls) {
 
-    const button = document.createElement('button');
-    button.type = 'button';
-    button.classList.add(cls);
-    button.textContent = text;
-
-    return button;
-
-}
 
 
 
