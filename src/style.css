@@ -21,3 +21,20 @@ html {
     max-width: 100%;
     height: auto;
   }
+
+  :root {
+
+    /* color palette */
+    --main-bg-color: #000000;
+    --main-text-color: #D4EBF8;
+    --main-accent-orange-color: #FF6500;
+    --main-accent-blue-color: #1E3E62;
+    
+    /* padding  */
+
+    --pd-small: 8px;
+    --pd-medium: 16px;
+    --pd-large: 28px;
+    --pd-huge: 36px;
+
+  }
