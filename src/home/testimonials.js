@@ -5,6 +5,7 @@ export function createTestimonials() {
 
     const div = document.createElement('div');
     const section = document.createElement('section');
+    section.classList.add('container');
 
 
     const cards = [

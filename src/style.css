@@ -26,7 +26,8 @@ html {
 
     /* color palette */
     --main-bg-color: #000000;
-    --main-text-color: #D4EBF8;
+    --main-bg-gray-color: #242323;
+    --main-text-color: #FBF8EF;
     --main-accent-orange-color: #FF6500;
     --main-accent-blue-color: #1E3E62;
     
@@ -38,3 +39,57 @@ html {
     --pd-huge: 36px;
 
   }
+
+  body {
+    color: var(--main-text-color);
+    background-color: var(--main-bg-gray-color);
+  }
+
+  
+
+header  {
+
+  display: flex;
+  background-color: rgba(255, 255, 255, .1);
+  justify-content: flex-end;
+
+     nav { 
+      padding: var(--pd-large);
+    
+       button {
+         border: none;
+         background-color: transparent;
+
+         color: var(--main-text-color);
+       }
+     }
+}
+
+.container {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: var(--pd-medium);
+
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    h1 {
+    font-size: 36px;
+    padding-bottom: 24px;
+    }
+
+    h3 {
+      padding-bottom: 16px;
+    }
+
+    .cta_container {
+      display: flex;
+      gap: var(--pd-small);
+    }
+  }
+
+}
+

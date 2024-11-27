@@ -7,6 +7,7 @@ export function createRecommendations () {
 
     const div = document.createElement('div');
     const section = document.createElement('section');
+    section.classList.add('container');
 
     const image = document.createElement('img');
     image.height = 500;

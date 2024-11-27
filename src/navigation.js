@@ -5,6 +5,7 @@ export function createNavigationMenu() {
 
     const header = document.createElement('header');
     const nav = document.createElement('nav');
+    nav.classList.add('container')
 
     const menuItems = [
     // navigation buttons for the site

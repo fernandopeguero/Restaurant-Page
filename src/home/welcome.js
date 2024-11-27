@@ -5,6 +5,7 @@ export function createWelcomeSection() {
 
     const div = document.createElement('div');
     const section = document.createElement('section');
+    section.classList.add('container');
 
     const info = document.createElement('article');
     info.classList.add('welcome_info');

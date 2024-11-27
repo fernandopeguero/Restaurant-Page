@@ -31,7 +31,9 @@ export function createNewsLetter() {
     
     childAppender(emailContainer, input, signUp);
 
-    childAppender(div, title, body, emailContainer);
+    childAppender(section, title, body, emailContainer);
+
+    div.appendChild(section);
 
     return div;
 
