@@ -10,6 +10,7 @@ export function createHeroArea() {
 
     const div = document.createElement("div");
     const section = document.createElement("section");
+    section.classList.add('container')
 
     // Information1
     const info = document.createElement("article");
@@ -34,6 +35,8 @@ export function createHeroArea() {
     childAppender(info, h1 , h3 , ctaContainer)
 
     const image = document.createElement("img");
+    image.height = 500;
+    image.width = 500;
     image.src = lamb;
     image.alt = "lamb cook to perfection"
 
