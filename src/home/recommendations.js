@@ -1,5 +1,5 @@
 
-import steak from '../img/steak-potatoes.png';
+import steak from '../img/plating-dish.jpg';
 import { childAppender } from '../util';
 
 export function createRecommendations () {
@@ -10,6 +10,7 @@ export function createRecommendations () {
     section.classList.add('container');
 
     const image = document.createElement('img');
+    image.classList.add('recommendation_image')
     image.height = 500;
     image.width = 500;
     image.src = steak;
