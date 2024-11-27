@@ -30,10 +30,12 @@ export function createWelcomeSection() {
     childAppender(info, title, textBody, ctaContainer);
 
     const image = document.createElement('img');
+    image.height = 500;
+    image.width = 500;
     image.src = steak;
     image.alt = 'steak with vegetables';
 
-    childAppender(section, info, image);
+    childAppender(section, image, info);
 
     div.append(section);
 
