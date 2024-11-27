@@ -55,7 +55,7 @@ header  {
 
      nav { 
       padding: var(--pd-large);
-    
+      gap: var(--pd-medium);
        button {
          border: none;
          background-color: transparent;
@@ -69,6 +69,7 @@ header  {
   display: flex;
   max-width: 1000px;
   margin: 0 auto;
+  gap: var(--pd-large);
   padding: var(--pd-medium);
 
   article {
@@ -79,6 +80,7 @@ header  {
     h1 {
     font-size: 36px;
     padding-bottom: 24px;
+    overflow: visible;
     }
 
     h3 {
@@ -89,7 +91,16 @@ header  {
       display: flex;
       gap: var(--pd-small);
     }
+
+    
   }
+
+  .recommendation_image {
+    border-radius: 25px 0;
+    overflow: hidden;
+  }
+
+
 
 }
 
