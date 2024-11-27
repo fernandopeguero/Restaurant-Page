@@ -3,6 +3,7 @@ import { createNavigationMenu } from "./navigation.js";
 import { createHeroArea} from './home/hero.js';
 import { createWelcomeSection } from './home/welcome.js';
 import { childAppender } from './util.js';
+import { createRecommendations } from './home/recommendations.js';
 
 
 
@@ -17,6 +18,7 @@ function initializeHtml() {
     const navigation = createNavigationMenu();
     const heroSection = createHeroArea();
     const welcomeSection = createWelcomeSection();
+    const chefRecommendations = createRecommendations();
 
-    childAppender(body, navigation, heroSection, welcomeSection);
+    childAppender(body, navigation, heroSection, welcomeSection, chefRecommendations);
 }
