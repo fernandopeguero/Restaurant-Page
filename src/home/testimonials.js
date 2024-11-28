@@ -4,6 +4,7 @@ import { childAppender } from "../util";
 export function createTestimonials() {
 
     const div = document.createElement('div');
+    div.classList.add('testimonial_container');
     const section = document.createElement('section');
     section.classList.add('container');
 
