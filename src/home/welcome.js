@@ -4,6 +4,7 @@ import steak from '../img/steak-vegetables.png'
 export function createWelcomeSection() {
 
     const div = document.createElement('div');
+    div.classList.add('welcome_container');
     const section = document.createElement('section');
     section.classList.add('container');
 
