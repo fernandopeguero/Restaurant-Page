@@ -4,6 +4,7 @@ import { childAppender, createUnorderList } from "./util";
 export function createFooter(){
 
     const div = document.createElement('div');
+    div.classList.add('footer_container');
     const section = document.createElement('section');
     section.classList.add('container');
 
