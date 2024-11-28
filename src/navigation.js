@@ -10,12 +10,12 @@ export function createNavigationMenu() {
     const menuItems = [
     // navigation buttons for the site
         createButton('HOME','home'),
-        createButton('ABOUT US', 'aboutUs'),
         createButton('MENU', 'menu'),
         createButton('RESERVATIONS', 'reservations'),
         createButton('ORDER ONLINE', 'orderOnline'),
         createButton('GALLERY', 'gallery'),
         createButton('EVENTS', 'events'),
+        createButton('ABOUT US', 'aboutUs'),
         createButton('CONTACT US', 'contactUs')
     ]
 
