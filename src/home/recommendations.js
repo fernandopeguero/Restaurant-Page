@@ -6,6 +6,7 @@ export function createRecommendations () {
 
 
     const div = document.createElement('div');
+    div.classList.add('recommendations_container');
     const section = document.createElement('section');
     section.classList.add('container');
 
