@@ -9,7 +9,7 @@ export function createWelcomeSection() {
     section.classList.add('container');
 
     const info = document.createElement('article');
-    info.classList.add('welcome_info');
+    info.classList.add('welcome_article');
     
     const title = document.createElement('h2');
     title.textContent = 'Welcome to Savory Delight';
