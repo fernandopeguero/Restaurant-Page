@@ -1,8 +1,6 @@
 /*
 Create hero area of  a section on the page home,about , others 
 */
-import lamb from '../img/lamb.png'
-import heroBackground from '../img/planing_table.jpg';
 
 import { createButton } from '../util';
 import { childAppender } from '../util';
