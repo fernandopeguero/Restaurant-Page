@@ -197,6 +197,54 @@ html {
 
   background-color: var(--main-bg-gray-color);
 
+  .container {
+    padding: var(--pd-extra);
+    display: flex;
+    gap: var(--pd-medium);
+
+    .recommendations_article {
+      display: flex;
+      flex-direction: column;
+
+      
+
+      h2 {
+        padding-bottom: var(--pd-medium);
+      }
+
+      p {
+        line-height: 1.5;
+        padding-bottom: var(--pd-extra);
+      }
+
+      .chef_recommendations {
+        display: flex;
+        gap: var(--pd-large);
+
+        h3 {
+          font-weight: bold;
+          color: var(--main-accent-orange-color);
+          padding-left: 0;
+          padding-bottom: var(--pd-small);
+        }
+
+        ul {
+          
+          line-height: 1.8;
+
+          li::before {
+            content: '•';
+            padding-right: var(--pd-small);
+          }
+
+          a {
+            text-decoration: none;
+            color: var(--main-text-color);
+          }
+        }
+      }
+    }
+  }
 
   .recommendation_image {
     border-radius: 25px 0;
@@ -209,11 +257,6 @@ html {
   max-width: 1000px;
   margin: 0 auto;
   height: 100%;
-
-  
-
-
-
 
 }
 
