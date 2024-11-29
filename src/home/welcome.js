@@ -15,7 +15,7 @@ export function createWelcomeSection() {
     title.textContent = 'Welcome to Savory Delight';
 
     const textBody = document.createElement('p');
-    textBody.textContent =`Step into a world where culinary artistry meets refined elegance. At Savory Delight, we craft unforgettable dining experiences through our commitment to exceptional flavors, impeccable presentation, and unparalleled service. Located in the heart of [City Name], we invite you to indulge in a menu inspired by seasonal ingredients and global influences, all meticulously curated for your delight.`;
+    textBody.textContent =`Step into a world where culinary artistry meets refined elegance. At Savory Delight, we craft unforgettable dining experiences through our commitment to exceptional flavors, impeccable presentation, and unparalleled service. Located in the heart of New york, we invite you to indulge in a menu inspired by seasonal ingredients and global influences, all meticulously curated for your delight.`;
 
     // call to action container 
     const ctaContainer = document.createElement('div');
