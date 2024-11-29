@@ -87,7 +87,6 @@ html {
   background: url(./img/planing_table.png);
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: center; */
   height: 600px;
 
   img {
@@ -149,19 +148,24 @@ html {
 .welcome_container {
   padding: var(--pd-extra_large) 0;
   background-color: var(--main-text-color);
+  color: var(--main-bg-color);
+  height: 600px;
 
   .welcome_article {
 
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: -80px;
 
     h2 {
       padding-bottom: var(--pd-small);
+      font-weight: bold;
     }
     p {
-      line-height: 1.5;
-      padding-bottom: var(--pd-large);
+      line-height: 1.8;
+      padding-bottom: var(--pd-extra);
+      font-weight: 500;
     }
 
     .cta_container {
@@ -177,12 +181,16 @@ html {
 
       button:hover {
         background-color: transparent;
-        border: solid white 2px;
+        border: solid var(--main-bg-gray-color) 2px;
         transform: scale(1.1);
+        color: var(--main-bg-gray-color);
+        
       }
     }
   
   }
+
+
 }
 
 .recommendations_container {
