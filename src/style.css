@@ -87,6 +87,7 @@ html {
   background: url(./img/planing_table.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 600px;
 
   img {
@@ -98,7 +99,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* margin-top: var(--pd-extra_large); */
+
     height: 100%;
 
     div {
@@ -156,7 +157,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: -80px;
+
 
     h2 {
       padding-bottom: var(--pd-small);
@@ -209,6 +210,8 @@ html {
       
 
       h2 {
+        font-size: var(--pd-extra);
+        font-weight: bolder;
         padding-bottom: var(--pd-medium);
       }
 
