@@ -1,11 +1,22 @@
 
-import { createButton } from "./util";
+import { childAppender, createButton } from "./util";
+
+import logo from './img/logo_long_transparent.png';
 
 export function createNavigationMenu() {
 
     const header = document.createElement('header');
+    header.classList.add('nav_container');
+    
     const nav = document.createElement('nav');
-    nav.classList.add('container')
+    // nav.classList.add('container')
+
+    // logo 
+    const image = document.createElement('img');
+    image.src = logo;
+    image.height = 100;
+    image.width = 100;
+
 
     const menuItems = [
     // navigation buttons for the site
@@ -24,7 +35,7 @@ export function createNavigationMenu() {
         nav.appendChild(item)
     });
 
-    header.appendChild(nav);
+    childAppender(header, image , nav)
     
     return header;
 }
