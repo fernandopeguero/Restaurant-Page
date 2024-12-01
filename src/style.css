@@ -79,6 +79,15 @@ html {
 
          color: var(--main-text-color);
        }
+
+       button:hover {
+        background-color: rgba(150, 150, 150, 0.3);
+       }
+
+       button:active {
+        background-color: var(--main-accent-orange-color);
+        color: white;
+       }
      }
 }
 
