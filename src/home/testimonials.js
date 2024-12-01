@@ -1,5 +1,9 @@
 import { childAppender } from "../util";
 
+import sophia from '../img/sophia_profile.jpg';
+import james from '../img/james_profile.jpg';
+import mia from '../img/mia_profile.jpg';
+
 
 export function createTestimonials() {
 
@@ -11,18 +15,18 @@ export function createTestimonials() {
 
     const cards = [
         createCard(
-            '', 
+            sophia, 
             'An Unforgettable Evening', 
             `From the moment we walked in, we were treated like royalty. The dishes were a masterpiece, both in flavor and presentation. Savory Delight has redefined gourmet dining for us!`, 
             `Sophia L., NYC`),
         createCard(
-            '', 
+            james, 
             'Simply Exquisite', 
             `Every bite was a symphony of flavors. The staff’s attention to detail and the ambiance made our anniversary dinner truly magical. Highly recommended for special occasions!`, 
             `James R., Brooklyn`
         ),
         createCard(
-            '', 
+            mia, 
             'A Culinary Journey', 
             `The seasonal tasting menu was divine! The chef’s creativity and passion are evident in every dish. Can’t wait to return and try more.`, 
             `Mia T., Manhattan`
