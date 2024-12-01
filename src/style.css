@@ -307,7 +307,52 @@ html {
 
   }
 
+}
 
+.newsletter_container { 
+
+  .container {
+
+    background-color: var(--main-bg-gray-color);
+    flex-direction: column;
+    padding: var(--pd-large);
+    border-radius: var(--pd-medium);
+
+    h2 {
+      font-weight: bolder;
+      margin-bottom: var(--pd-small);
+    }
+
+    p {
+      line-height: 1.5;
+      margin-bottom: var(--pd-large);
+    }
+
+    .email_container {
+
+      display: flex;
+      gap: var(--pd-large);
+
+      #email {
+        flex: 1;
+        padding-left: var(--pd-small);
+        border-radius: var(--pd-small);
+      }
+
+      button {
+        font-weight: bold;
+        color: white;
+        background-color: var(--main-accent-orange-color);
+        border: solid 2px var(--main-text-color);
+        transition: 0.3s;
+      }
+
+      button:hover {
+        transform: scale(1.1);
+        background-color: transparent;
+      }
+    }
+  }
 
 }
 

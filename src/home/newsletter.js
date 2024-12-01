@@ -16,7 +16,7 @@ export function createNewsLetter() {
     body.textContent = `Be the first to discover our latest culinary creations, exclusive promotions, and upcoming events. Sign up for our newsletter and let the flavors of Savory Delight inspire your inbox.`;
 
     const emailContainer = document.createElement('div');
-    emailContainer.classList.add('emailContainer');
+    emailContainer.classList.add('email_container');
 
     const input = document.createElement('input');
     input.type = 'text';
