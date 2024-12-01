@@ -14,7 +14,7 @@ export function createFooter(){
     const socialMediaList = createUnorderList(['instagram', 'Facebook', 'Twitter']);
 
     const policyList = createUnorderList(['Privacy Policy', 'Terms & Conditions', '© 2024 Savory Delight. All Rights Reserved.'])
-
+    
 
     childAppender(section, navigationList, socialMediaList, policyList);
 
