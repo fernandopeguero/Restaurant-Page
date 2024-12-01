@@ -255,6 +255,62 @@ html {
   }
 }
 
+.testimonial_container {
+
+  .container {
+
+    padding: var(--pd-extra_large);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--pd-large);
+
+    .card {
+      justify-self: center;
+      background-color: #373737;
+      padding: var(--pd-medium);
+      max-width: 250px;
+      display: flex;
+      flex-direction: column;
+      border-radius: var(--pd-medium);
+      height: 450px;
+  
+      img {
+        align-self: center;
+        border-radius: 50%;
+        overflow: hidden;
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+        border: solid 5px var(--main-accent-orange-color);
+        margin-bottom: var(--pd-medium);
+      }
+
+      h3 {
+        font-weight: bold;
+        color: var(--main-accent-orange-color);
+        margin-bottom: var(--pd-small);
+      }
+
+      p{
+        line-height: 1.6;
+        margin-bottom: var(--pd-medium);
+      }
+
+      h4 {
+        align-self: flex-end;
+        margin-top: auto;
+        font-weight: bold;
+        color: var(--main-accent-orange-color);
+      }
+  
+    }
+
+  }
+
+
+
+}
+
 .container {
   display: flex;
   max-width: 1000px;

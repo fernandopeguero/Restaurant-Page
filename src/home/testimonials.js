@@ -16,7 +16,7 @@ export function createTestimonials() {
     const cards = [
         createCard(
             sophia, 
-            'An Unforgettable Evening', 
+            'Unforgettable Evening', 
             `From the moment we walked in, we were treated like royalty. The dishes were a masterpiece, both in flavor and presentation. Savory Delight has redefined gourmet dining for us!`, 
             `Sophia L., NYC`),
         createCard(
@@ -53,7 +53,6 @@ function createCard(img = '', title, body, author ) {
     image.width = 100;
     image.src = img || "";
     image.alt = 'user testimonial picture'
-    image.style.backgroundColor = 'Gray'
 
     const cardTitle = document.createElement('h3');
     cardTitle.textContent = title;
