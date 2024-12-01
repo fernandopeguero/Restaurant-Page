@@ -368,6 +368,7 @@ html {
 
 .footer_container {
   background-color: var(--main-text-color);
+  color: var(--main-bg-gray-color);
 
   .container {
     padding: var(--pd-extra_large);
@@ -381,14 +382,23 @@ html {
       flex-direction: column;
       justify-content: flex-end;
 
-    }
-    a {
-      color: var(--main-bg-color);
-      text-decoration: none;
-      font-weight: bold;
-    }
+      a {
+        color: var(--main-bg-color);
+        text-decoration: none;
+        font-weight: bold;
+      }
+  
+      a:hover {
+        color: var(--main-accent-orange-color);
+      }
 
-    a:hover {
+    }
+    
+
+    h4{
+      align-self: flex-end;
+      font-weight: bolder;
+      padding: 4px;
       color: var(--main-accent-orange-color);
     }
 
