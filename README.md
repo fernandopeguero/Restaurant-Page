@@ -1,6 +1,9 @@
 # Savory Delight Responsive Website
 Savory Delight is a responsive website designed to showcase the elegance and offerings of a gourmet dining restaurant. Built with a focus on performance and modern design, the project incorporates Webpack for efficient bundling and modular JavaScript development.
 
+
+![savory](https://github.com/user-attachments/assets/e90b93a3-cc78-46f4-9662-65abd58d7569)
+
 **Features:**
 - **Responsive Design**: Ensures a seamless user experience across desktop, tablet, and mobile devices.
 - **Dynamic Content**: Utilizes JavaScript to render content dynamically, improving scalability and maintainability.
