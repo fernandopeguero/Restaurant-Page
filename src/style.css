@@ -111,7 +111,7 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgba(20, 20, 20, 0.3);
+    background-color: rgba(20, 20, 20, 0.5);
     padding: var(--pd-large);
     height: 70%;
     border-radius: var(--pd-medium);
