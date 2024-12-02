@@ -1,9 +1,16 @@
+import { navigationController } from ".";
+
+
+
 export function createButton(text, cls) {
 
     const button = document.createElement('button');
     button.type = 'button';
     button.classList.add(cls);
     button.textContent = text;
+    button.addEventListener('click' , (e) => {
+        navigationController(cls);
+    })
 
     return button;
 

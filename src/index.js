@@ -9,9 +9,35 @@ import { createNewsLetter } from './home/newsletter.js';
 import { createFooter } from './footer.js';
 
 
+export function navigationController(destination) {
 
-initializeHomePage();
+    switch(destination){
+        case 'home':
+            initializeHomePage();
+            break;
+        case 'menu':
+            break;
+        case 'reservations':
+            break;
+        case 'orderOnline':
+            break;
+        case 'gallery':
+            break;
+        case 'events':
+            break;
+        case 'aboutUs':
+            break;
+        case 'contactUs':
+            break;
+        default: 
+            const body = document.querySelector('body')
 
+            body.textContent = destination;
+
+    }
+}
+
+navigationController('home')
 
 
 

@@ -3,6 +3,7 @@ import { childAppender, createButton } from "./util";
 
 import logo from './img/logo_long_transparent.png';
 
+
 export function createNavigationMenu() {
 
     const header = document.createElement('header');
