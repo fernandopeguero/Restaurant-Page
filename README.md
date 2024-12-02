@@ -6,11 +6,13 @@ Savory Delight is a responsive website designed to showcase the elegance and off
 - **Dynamic Content**: Utilizes JavaScript to render content dynamically, improving scalability and maintainability.
 - **Optimized Performance**: Leverages Webpack for asset optimization, including JavaScript, CSS, and image bundling.
 - **Stylish Aesthetics**: Implements a clean, elegant design with HTML and CSS to align with the restaurant's sophisticated brand.
+  
 **Technologies Used**:
 - **Webpack**: For module bundling and build optimization.
 - **JavaScript**: For dynamic interactivity and content management.
 - **HTML**: For semantic structure and content markup.
 - **CSS**: For styling and layout design.
+
 **Key Goals**:
 - Provide an intuitive and attractive interface for visitors.
 - Maintain responsive and adaptive design principles.
