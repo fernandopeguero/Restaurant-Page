@@ -15,7 +15,7 @@ export function createFooter(){
 
     const policyList = createUnorderList(['Privacy Policy', 'Terms & Conditions', '© 2024 Savory Delight. All Rights Reserved.'])
     
-    const author = document.createElement('h4');
+    const author = document.createElement('h3');
     author.textContent = "Create by Fernando Peguero";
 
     childAppender(section, navigationList, socialMediaList, policyList, author);
