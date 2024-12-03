@@ -7,6 +7,7 @@ import { createRecommendations } from './home/recommendations.js';
 import { createTestimonials } from './home/testimonials.js';
 import { createNewsLetter } from './home/newsletter.js';
 import { createFooter } from './footer.js';
+import { createMenu } from './menu/menu.js';
 
 
 const body = document.querySelector('body');
@@ -71,8 +72,9 @@ function HomePage() {
 function menuPage() {
     clearPage()
 
+    const menu = createMenu()
 
-    childAppender(body, navigation, footerSection);
+    childAppender(body, navigation,menu ,footerSection);
 
     
 
