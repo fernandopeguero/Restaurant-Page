@@ -51,3 +51,35 @@ export function createListItem(text){
 
 
 }
+
+
+export function createMenuItem(title, list, image = "", swap = false) {
+
+
+    const section = document.createElement('section');
+    section.classList.add('menu_container');
+
+    const details = document.createElement('div');
+
+
+    const h3 = document.createElement('h3');
+    h3.textContent = title;
+
+    const menuItems = createUnorderList(list);
+
+    childAppender(details, h3, menuItems);
+    
+    const menuImage = document.createElement('img');
+    menuImage.src = image || "";
+
+
+    if(swap) {
+
+        childAppender(section, menuImage , details)
+    } else {
+        childAppender(section, details, menuImage);
+    }
+
+
+    return section;
+}
