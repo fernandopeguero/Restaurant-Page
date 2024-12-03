@@ -53,7 +53,7 @@ export function createListItem(text){
 }
 
 
-export function createMenuItem(title, list, image = "", swap = false) {
+export function createMenuItem(title, sub, list, image = "", swap = false) {
 
 
     const section = document.createElement('section');
@@ -62,12 +62,15 @@ export function createMenuItem(title, list, image = "", swap = false) {
     const details = document.createElement('div');
 
 
-    const h3 = document.createElement('h3');
-    h3.textContent = title;
+    const sectionTitle = document.createElement('h2');
+    sectionTitle.textContent = title;
+
+    const subtitle = document.createElement('p');
+    subtitle.textContent = sub;
 
     const menuItems = createUnorderList(list);
 
-    childAppender(details, h3, menuItems);
+    childAppender(details, sectionTitle, subtitle, menuItems);
     
     const menuImage = document.createElement('img');
     menuImage.src = image || "";
