@@ -414,12 +414,57 @@ html {
 
 
 }
-
 .container {
   display: flex;
   max-width: 1000px;
   margin: 0 auto;
   height: 100%;
 
+}
+
+
+/* Menu Page  */
+
+.menu_container {
+
+  .menu_hero_area {
+    height: 700px;
+    position: relative;
+    place-content: center;
+    overflow: hidden;
+    place-content: center;
+    color: var(--main-bg-gray-color);
+
+    .info_container {
+
+      max-width: 800px;
+      margin: 0 auto;
+      h1 {
+        /* text-align: center; */
+        font-size: clamp(1rem, -1.8125rem + 15vw, 6.625rem);
+        font-weight: bolder;
+        color: var(--main-accent-orange-color);
+      }
+
+      h2 {
+        font-weight: bold;
+      }
+
+    }
+
+    img {
+      position: absolute; 
+      top: 0;
+      left: 0; 
+      z-index: -10;
+      filter: blur(5px) grayscale(20%);
+      object-fit: contain;
+
+    }
+
+
+  }
+  
+  
 }
 
