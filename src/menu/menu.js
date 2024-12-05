@@ -53,9 +53,6 @@ export function createMenu() {
         wine
     )
 
-
-
-
     childAppender(container, menuHero , entrees, desserts , wines);
 
     return container;
