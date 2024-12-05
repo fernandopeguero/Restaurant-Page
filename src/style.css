@@ -441,7 +441,6 @@ html {
       max-width: 800px;
       margin: 0 auto;
       h1 {
-        /* text-align: center; */
         font-size: clamp(1rem, -1.8125rem + 15vw, 6.625rem);
         font-weight: bolder;
         color: var(--main-accent-orange-color);
@@ -459,13 +458,61 @@ html {
       left: 0; 
       z-index: -10;
       filter: blur(5px) grayscale(20%);
-      object-fit: contain;
+      object-fit: cover;
+      object-position: center;
 
     }
 
 
   }
-  
-  
+
+  .container {
+    padding: var(--pd-extra_large) var(--pd-large);
+    gap: var(--pd-extra);
+    align-items: center;
+
+    img {
+      height: 400px;
+      width: 400px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: solid 10px var(--main-accent-orange-color);
+    }
+
+    h2 {
+      text-transform: uppercase;
+      font-weight: bolder;
+      color: var(--main-accent-orange-color);
+    }
+
+    h3 {
+      font-weight: 500;
+      margin-bottom: var(--pd-medium);
+    }
+
+    ul {
+      list-style: none;
+      text-decoration: none;
+      line-height: 1.7;
+      padding-left: var(--pd-small);
+
+      li:before {
+        content: "•";
+        padding-right: var(--pd-small);
+      }
+
+      a {
+        text-decoration: none;
+        transition: 0.3ms;
+        color: var(--main-text-color);
+      }
+      a:hover {
+        color: var(--main-accent-orange-color);
+        transform: scale(1.1);
+      }
+    }
+  }
+
+
 }
 
