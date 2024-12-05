@@ -74,6 +74,8 @@ export function createMenuItem(title, sub, list, image = "", swap = false) {
     
     const menuImage = document.createElement('img');
     menuImage.src = image || "";
+    menuImage.height = 600;
+    menuImage.width = 600;
 
 
     if(swap) {
