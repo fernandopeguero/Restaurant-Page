@@ -57,7 +57,7 @@ export function createMenuItem(title, sub, list, image = "", swap = false) {
 
 
     const section = document.createElement('section');
-    section.classList.add('menu_container');
+    section.classList.add('container');
 
     const details = document.createElement('div');
 
@@ -65,7 +65,7 @@ export function createMenuItem(title, sub, list, image = "", swap = false) {
     const sectionTitle = document.createElement('h2');
     sectionTitle.textContent = title;
 
-    const subtitle = document.createElement('p');
+    const subtitle = document.createElement('h3');
     subtitle.textContent = sub;
 
     const menuItems = createUnorderList(list);
