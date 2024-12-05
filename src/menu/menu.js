@@ -1,5 +1,5 @@
 import { childAppender, createMenuItem } from "../util";
-import lamb from '../img/lamb.png';
+import steakServe from '../img/steak_serve.jpg';
 import menuBackground from '../img/condiments.jpg';
 import lavaCake from '../img/lava_cake.jpg';
 import wine from '../img/wine.jpg';
@@ -36,7 +36,7 @@ export function createMenu() {
 
     childAppender(menuHero, bgMenuImage, info)
 
-    const entrees = createMenuItem('Entrees', 'Signature dishes crafted to perfection.',['Herb-Crusted Lamb Chops', 'Seared Halibut with Citrus Beurre Blanc' , 'Filet Mignon with Truffle Butter' , 'Wild Mushroom Risotto' , 'Pan-Seared Duck Breast'], lamb);
+    const entrees = createMenuItem('Entrees', 'Signature dishes crafted to perfection.',['Herb-Crusted Lamb Chops', 'Seared Halibut with Citrus Beurre Blanc' , 'Filet Mignon with Truffle Butter' , 'Wild Mushroom Risotto' , 'Pan-Seared Duck Breast'], steakServe);
 
     const desserts = createMenuItem('Desserts', 'End your meal on a sweet note with our handcrafted desserts.', ['Molten Chocolate Lava Cake', 'Vanilla Crème Brûlée', 'Lemon Thyme Tart', 'Poached Pear in Red Wine', 'Seasonal Cheesecake'], lavaCake, true );
 
@@ -44,11 +44,11 @@ export function createMenu() {
         'Wine Pairings',
         'Perfectly paired wines to complement every dish.',
         [
-            'Dom Pérignon, Brut Champagne (Sparkling)',
-            'Cloudy Bay, Sauvignon Blanc, New Zealand (White)',
-            'Château Margaux, Bordeaux, France (Red)',
-            'Whispering Angel, Rosé, Provence, France (Rosé)',
-            'Château d’Yquem, Sauternes, France (Dessert)'
+            'Dom Pérignon, Brut Champagne',
+            'Cloudy Bay, Sauvignon Blanc, New Zealand',
+            'Château Margaux, Bordeaux, France',
+            'Whispering Angel, Rosé, Provence, France',
+            'Château d’Yquem, Sauternes, France'
         ],
         wine
     )
