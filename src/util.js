@@ -55,6 +55,8 @@ export function createListItem(text){
 
 export function createMenuItem(title, sub, list, image = "", swap = false) {
 
+    const container = document.createElement('div');
+    container.classList.add('menu_item_container')
 
     const section = document.createElement('section');
     section.classList.add('container');
@@ -85,6 +87,12 @@ export function createMenuItem(title, sub, list, image = "", swap = false) {
         childAppender(section, details, menuImage);
     }
 
+    container.appendChild(section);
+    return container;
+}
 
-    return section;
+
+function setPageTitle(title) {
+
+    document.title = title;
 }
