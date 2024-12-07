@@ -117,3 +117,11 @@ export function addOptionToSelect(select, option){
 
     select.appendChild(userOption)
 }
+
+export function createInputLabel(text, input) {
+    const label = document.createElement('label');
+    label.textContent = text;
+    label.setAttribute('for', input);
+
+    return label;
+}
