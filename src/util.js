@@ -92,7 +92,28 @@ export function createMenuItem(title, sub, list, image = "", swap = false) {
 }
 
 
-function setPageTitle(title) {
+export function setPageTitle(title) {
 
     document.title = title;
+}
+
+
+export function createInput(name ,type) {
+
+    const input = document.createElement('input');
+    input.name = name;
+    input.type = type;
+    input.setAttribute('id', name);
+
+    return input;
+}
+
+
+export function addOptionToSelect(select, option){
+
+    const userOption = document.createElement('option');
+    userOption.text = option;
+    userOption.value = option;
+
+    select.appendChild(userOption)
 }

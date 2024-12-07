@@ -8,6 +8,8 @@ import { createTestimonials } from './home/testimonials.js';
 import { createNewsLetter } from './home/newsletter.js';
 import { createFooter } from './footer.js';
 import { createMenu } from './menu/menu.js';
+import { setPageTitle } from './util.js';
+import { createReservation } from './reservation/reservation.js';
 
 
 const body = document.querySelector('body');
@@ -58,6 +60,8 @@ function HomePage() {
 
     clearPage()
 
+    setPageTitle('Restaurant Page');
+
     const heroSection = createHeroArea();
     const welcomeSection = createWelcomeSection();
     const chefRecommendations = createRecommendations();
@@ -73,6 +77,7 @@ function menuPage() {
     clearPage()
 
     const menu = createMenu()
+    setPageTitle('Menu');
 
     childAppender(body, navigation,menu ,footerSection);
 
@@ -82,41 +87,42 @@ function menuPage() {
 
 function reservationsPage() {
     clearPage()
-
-    childAppender(body, navigation, footerSection);
+    setPageTitle('Reservations');
+    const reservation = createReservation()
+    childAppender(body, navigation, reservation,footerSection);
 
 }
 
 function orderOnlinePage() {
     clearPage()
-
+    setPageTitle('OrderOnline');
     childAppender(body, navigation, footerSection);
 }
 
 function galleryPage() {
 
     clearPage()
-
+    setPageTitle('Gallery');
     childAppender(body, navigation, footerSection);
 }
 
 function eventsPage() {
 
     clearPage()
-
+    setPageTitle('Events');
     childAppender(body, navigation, footerSection);
 }
 
 function aboutUsPage() {
 
     clearPage()
-
+    setPageTitle('About Us');
     childAppender(body, navigation, footerSection);
 }
 
 function contactUsPage() {
     clearPage()
-
+    setPageTitle('Contact Us');
     childAppender(body, navigation, footerSection);
 }
 
