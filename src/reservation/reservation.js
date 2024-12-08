@@ -1,6 +1,7 @@
 import { addOptionToSelect, childAppender, createInput, createInputLabel } from "../util";
 
 
+
 export function createReservation() {
 
     const reservationSection = document.createElement('div');
@@ -54,7 +55,11 @@ export function createReservation() {
     const dietaryRestrictions = document.createElement('textarea');
     const diestaryLabel = createInputLabel('Dietary Restrictions:' , 'special_request');
 
-    childAppender(form, title, fullNameLabel, fullName, emailLabel, emailAddress,phoneLabel, phoneNumber,reservationLabel, reservationDate,guestlabel, guestAmount,diestaryLabel, dietaryRestrictions);
+    const actionButton = document.createElement('button');
+    actionButton.type = 'button';
+    actionButton.textContent = 'Submit Reservation';
+
+    childAppender(form, title, fullNameLabel, fullName, emailLabel, emailAddress,phoneLabel, phoneNumber,reservationLabel, reservationDate,guestlabel, guestAmount,diestaryLabel, dietaryRestrictions, actionButton);
 
     const hoursContainer = document.createElement('div');
     hoursContainer.classList.add('operation_hours');

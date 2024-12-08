@@ -537,7 +537,7 @@ html {
     .reservation_form {
       display: flex;
       flex-direction: column;
-      margin: var(--pd-large);
+      margin: var(--pd-extra);
       color: var(--main-bg-gray-color);
       text-transform: uppercase;
       font-size: var(--pd-medium);
@@ -570,7 +570,42 @@ html {
       textarea {
         height: 150px;
         resize: none;
+        margin-bottom: var(--pd-huge);
       }
+
+      button {
+        font-weight: bold;
+        transition: 0.3s;
+        position: relative;
+        overflow: hidden;
+        background-color: transparent;
+        
+      }
+      button:before {
+        content: "";
+        top: 0;
+        left: 0;
+        background-color: var(--main-accent-orange-color);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        display: inline-block;
+        z-index: -10;
+        
+        
+      }
+
+      button:hover {
+        color: var(--main-text-color);
+        border: solid 2px var(--main-text-color);
+        transform: scale(1.05);
+        
+        
+      }
+
+
+
+      
     }
 
     .operation_hours {
