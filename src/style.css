@@ -520,17 +520,20 @@ html {
 .reservation_section {
 
   padding: var(--pd-extra_large);
-  max-width: 1200px;
-  margin: 0 auto;
+
+  background-color: var(--main-bg-gray-color);
 
 
   .reservation_container {
 
     background-color: var(--main-text-color);
+    max-width: 1400px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-radius: var(--pd-small);
+    border-radius: var(--pd-medium);
     overflow: hidden;
+    margin: 0 auto;
+    color: var(--main-text-color);
 
 
 
@@ -611,7 +614,47 @@ html {
     .operation_hours {
       flex: 1;
       grid-column: 2;
-      background-color:var(--main-accent-orange-color);
+      background: url(./img/restaurant.jpg);
+      box-shadow: inset 0 0 5em 50em rgba(10, 10, 10, 0.8);
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      place-content: center;
+      padding: var(--pd-large);
+
+      h2 {
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: var(--pd-extra);
+        font-weight: bolder;
+      }
+
+      h3 {
+        font-weight: bold;
+        margin-bottom: var(--pd-small);
+      }
+
+      ul {
+        padding-left: var(--pd-large );
+        margin-bottom: var(--pd-large);
+        list-style: circle;
+        line-height: 1.7;
+      }
+
+      li:hover {
+        cursor: none;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      a:hover {
+        cursor: auto;
+        user-select: text;
+      }
+
     }
 
 

@@ -1,4 +1,4 @@
-import { addOptionToSelect, childAppender, createInput, createInputLabel } from "../util";
+import { addOptionToSelect, childAppender, createInput, createInputLabel, createUnorderList } from "../util";
 
 
 
@@ -64,11 +64,49 @@ export function createReservation() {
     const hoursContainer = document.createElement('div');
     hoursContainer.classList.add('operation_hours');
 
+    const informationTitle = document.createElement('h2')
+    informationTitle.textContent = "Information";
+
+    const informationSection = createOperationInformation();
+
+    childAppender(hoursContainer, informationTitle ,informationSection);
+
     childAppender(container, form, hoursContainer );
 
     childAppender(reservationSection,container);
 
 
     return reservationSection;
+
+}
+
+
+
+
+function createOperationInformation() {
+
+
+    const information = document.createElement('div');
+
+    const hours = document.createElement('h3');
+    hours.textContent = "Hours Of Operation:";
+
+    const timeSheet = createUnorderList(['Mon–Fri: 5 PM – 10 PM', 'Sat–Sun: 12 PM – 10 PM']);
+
+    const reservationPolicy = document.createElement('h3');
+    reservationPolicy.textContent = 'Reservation Policy:';
+
+    const policy = createUnorderList(['Reservations are highly recommended, especially for weekends and holidays. Walk-ins are welcome based on availability.', 'Please inform us of cancellations at least 24 hours in advance.']);
+
+    const groups = document.createElement('h3');
+    groups.textContent = 'Group Reservations:'
+
+    const groudsPolicy = createUnorderList(['For parties of 8 or more, please contact us directly at (555) 123-4567 or email events@savorydelight.com.' , 'For an exclusive and intimate experience, our private dining rooms are perfect for special occasions, corporate gatherings, or family celebrations. Each room is elegantly designed and can accommodate groups of 10 to 30 guests.'])
+
+
+    childAppender(information, hours, timeSheet, reservationPolicy, policy, groups, groudsPolicy);
+
+    
+    return information;
 
 }
