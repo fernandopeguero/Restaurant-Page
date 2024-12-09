@@ -10,6 +10,7 @@ import { createFooter } from './footer.js';
 import { createMenu } from './menu/menu.js';
 import { setPageTitle } from './util.js';
 import { createReservation } from './reservation/reservation.js';
+import { createOrderOnline } from './orderOnline/order.js';
 
 
 const body = document.querySelector('body');
@@ -96,7 +97,10 @@ function reservationsPage() {
 function orderOnlinePage() {
     clearPage()
     setPageTitle('OrderOnline');
-    childAppender(body, navigation, footerSection);
+
+    const orderOnline = createOrderOnline();
+
+    childAppender(body, navigation, orderOnline ,footerSection);
 }
 
 function galleryPage() {
