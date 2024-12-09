@@ -30,6 +30,11 @@ html {
     --main-text-color: #FBF8EF;
     --main-accent-orange-color: #FF6500;
     --main-accent-blue-color: #1E3E62;
+
+    /* online order color */
+    --uber-green: rgba(88, 190, 112, .8);
+    --grubhub-orange: rgba(220, 137, 54, .8);
+    --doordash-orange: rgba(235, 23, 0, .8);
     
     /* padding  */
 
@@ -660,4 +665,73 @@ html {
 
   }
 
+}
+
+/* Order Page  */
+
+
+.order_container {
+
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+
+  h2 {
+    flex: 1;
+    text-align: center;
+    font-weight: bolder;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+
+    .uber {
+      background: url(./img/uber.jpg);
+
+    }
+
+    .grubhub {
+      background: url(./img/grubhub.jpg);
+    }
+
+    .doordash {
+      background: url(./img/doordash.jpg);
+    }
+
+
+
+    /* hover Effect */
+    .uber:hover {
+      background-color: var(--uber-green);
+
+    }
+
+
+    .grubhub:hover {
+
+      background-color: var(--grubhub-orange);
+    }
+
+    .doordash:hover {
+      background-color: var(--doordash-orange);
+    }
+
+    .uber:hover , .grubhub:hover, .doordash:hover {
+      background-blend-mode: overlay;
+      flex: 1.5;
+      font-size: 4rem;
+    }
+
+    .uber, .grubhub, .doordash {
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transition: 0.3s;
+      cursor: pointer;
+      box-shadow: inset rgba(10, 10, 10, 0.5) 0 0 5em 10em;
+    }
+ 
 }
