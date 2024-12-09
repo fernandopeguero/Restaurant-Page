@@ -30,8 +30,9 @@ export function createReservation() {
     emailAddress.placeholder = 'goodfood@gmail.com'
 
     // Phone Number
-    const phoneNumber = createInput('phone_number', 'number');
+    const phoneNumber = createInput('phone_number', 'tel');
     phoneNumber.placeholder = '555-555-5555';
+    phoneNumber.pattern = "[0-9]{3}-[0-9]{2}-[0-9]{3}"
     const phoneLabel = createInputLabel('Phone Number:' , 'phone_number');
 
     const reservationDate = createInput('reservation_date', 'date');
