@@ -84,7 +84,7 @@ export function createReservation() {
 
 
 
-function createOperationInformation() {
+export function createOperationInformation() {
 
 
     const information = document.createElement('div');

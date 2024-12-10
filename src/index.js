@@ -11,6 +11,7 @@ import { createMenu } from './menu/menu.js';
 import { setPageTitle } from './util.js';
 import { createReservation } from './reservation/reservation.js';
 import { createOrderOnline } from './orderOnline/order.js';
+import { createContactUs } from './contact/contactUs.js';
 
 
 const body = document.querySelector('body');
@@ -127,7 +128,9 @@ function aboutUsPage() {
 function contactUsPage() {
     clearPage()
     setPageTitle('Contact Us');
-    childAppender(body, navigation, footerSection);
+
+    const contactUs = createContactUs();
+    childAppender(body, navigation, contactUs,footerSection);
 }
 
 function clearPage() {
