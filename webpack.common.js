@@ -1,5 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { url } = require('inspector');
+const { name } = require('file-loader');
+const { type } = require('os');
 
 module.exports = {
     mode: 'development',
@@ -23,36 +26,17 @@ module.exports = {
             {
                 test: /\.html$/i,
                 loader: "html-loader",
+            
             },
+
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                type: 'asset/resource',
+                dependency: { not: ['url'] },
+                type: 'javascript/auto',
                 use: [
-                    'file-loader',
-                    {
-                      loader: 'image-webpack-loader',
-                      options: {
-                        mozjpeg: {
-                          progressive: true,
-                        },
-                        // optipng.enabled: false will disable optipng
-                        optipng: {
-                          enabled: false,
-                        },
-                        pngquant: {
-                          quality: [0.65, 0.90],
-                          speed: 4
-                        },
-                        gifsicle: {
-                          interlaced: false,
-                        },
-                        // the webp option will enable WEBP
-                        webp: {
-                          quality: 75
-                        }
-                      }
-                    },
-                  ],
+                    'file-loader'
+                ]
+                
             }
 
             
