@@ -125,3 +125,18 @@ export function createInputLabel(text, input) {
 
     return label;
 }
+
+export function createGalleryItem(title, description, photo) {
+    const container = document.createElement('div');
+    container.classList.add('gallery_img_container');
+
+    const image = document.createElement('img');
+    image.src = photo;
+    image.alt = description;
+
+
+    const title = document.createElement('h2');
+    title.textContent = title;
+
+    return container;
+}
