@@ -815,7 +815,7 @@ html {
 
   p {
     font-size: var(--pd-medium);
-    font-weight: bold;
+    font-weight: 600;
     letter-spacing: 5px;
     transition: .5s;
     transform: translateY(20px);
