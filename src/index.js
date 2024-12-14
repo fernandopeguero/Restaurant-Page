@@ -12,6 +12,7 @@ import { setPageTitle } from './util.js';
 import { createReservation } from './reservation/reservation.js';
 import { createOrderOnline } from './orderOnline/order.js';
 import { createContactUs } from './contact/contactUs.js';
+import { createGallery } from './gallery/gallery.js';
 
 
 const body = document.querySelector('body');
@@ -108,7 +109,9 @@ function galleryPage() {
 
     clearPage()
     setPageTitle('Gallery');
-    childAppender(body, navigation, footerSection);
+
+    const gallery = createGallery();
+    childAppender(body, navigation, gallery, footerSection);
 }
 
 function eventsPage() {
