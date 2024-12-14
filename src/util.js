@@ -129,16 +129,18 @@ export function createInputLabel(text, input) {
 export function createGalleryItem(text, description, photo) {
     const container = document.createElement('div');
     container.classList.add('gallery_img_container');
-
-    const image = document.createElement('img');
-    image.src = photo;
-    image.alt = description;
-
+    
+    const textContainer = document.createElement('div');
 
     const title = document.createElement('h2');
     title.textContent = text;
 
-    childAppender(container, image, title);
+    const subTitle = document.createElement('p');
+    subTitle.textContent = description;
+
+    childAppender(textContainer, title, subTitle);
+        
+    childAppender(container, textContainer)
 
     return container;
 }
